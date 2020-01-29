@@ -29,7 +29,7 @@ import java.util.Map;
 public class TranslationStatus  {
   
   private ErrorResponse error = null;
-  private String batchId = null;
+//  private String batchId = null;
   private Boolean cancelled = null;
   private Double createdAt = null;
   private String description = null;
@@ -87,17 +87,17 @@ public class TranslationStatus  {
   }
 
   
-  /**
-   * Batch Identifier
-   **/
-  @ApiModelProperty(value = "Batch Identifier")
-  @JsonProperty("batchId")
-  public String getBatchId() {
-    return batchId;
-  }
-  public void setBatchId(String batchId) {
-    this.batchId = batchId;
-  }
+//  /**
+//   * Batch Identifier
+//   **/
+//  @ApiModelProperty(value = "Batch Identifier")
+//  @JsonProperty("batchId")
+//  public String getBatchId() {
+//    return batchId;
+//  }
+//  public void setBatchId(String batchId) {
+//    this.batchId = batchId;
+//  }
 
   
   /**
@@ -211,7 +211,7 @@ public class TranslationStatus  {
     sb.append("class TranslationStatus {\n");
     
     sb.append("  error: ").append(error).append("\n");
-    sb.append("  batchId: ").append(batchId).append("\n");
+//    sb.append("  batchId: ").append(batchId).append("\n");
     sb.append("  cancelled: ").append(cancelled).append("\n");
     sb.append("  createdAt: ").append(createdAt).append("\n");
     sb.append("  description: ").append(description).append("\n");

@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @ApiModel(description = "Profile identifier")
 public class ProfileId  {
   
-  private Integer id = null;
+  private String id = null;
   private Boolean _private = null;
 
   
@@ -35,10 +35,10 @@ public class ProfileId  {
    **/
   @ApiModelProperty(required = true, value = "Profile identifier")
   @JsonProperty("id")
-  public Integer getId() {
+  public String getId() {
     return id;
   }
-  public void setId(Integer id) {
+  public void setId(String id) {
     this.id = id;
   }
 

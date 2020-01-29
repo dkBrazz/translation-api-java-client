@@ -29,7 +29,7 @@ import java.util.Map;
 @ApiModel(description = "Batch Request")
 public class BatchRequest  {
   
-  private String id = null;
+//  private String id = null;
   public enum StatusEnum {
     pending("pending"), finished("finished"), cancelled("cancelled"), error("error"); 
 
@@ -64,17 +64,17 @@ public class BatchRequest  {
   private StatusEnum status = null;
 
   
-  /**
-   * Request identifier
-   **/
-  @ApiModelProperty(required = true, value = "Request identifier")
-  @JsonProperty("id")
-  public String getId() {
-    return id;
-  }
-  public void setId(String id) {
-    this.id = id;
-  }
+//  /**
+//   * Request identifier
+//   **/
+//  @ApiModelProperty(required = true, value = "Request identifier")
+//  @JsonProperty("id")
+//  public String getId() {
+//    return id;
+//  }
+//  public void setId(String id) {
+//    this.id = id;
+//  }
 
   
   /**
@@ -96,7 +96,7 @@ public class BatchRequest  {
     StringBuilder sb = new StringBuilder();
     sb.append("class BatchRequest {\n");
     
-    sb.append("  id: ").append(id).append("\n");
+//    sb.append("  id: ").append(id).append("\n");
     sb.append("  status: ").append(status).append("\n");
     sb.append("}\n");
     return sb.toString();
